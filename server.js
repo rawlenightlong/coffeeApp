@@ -4,7 +4,7 @@ const app = express()
 dotenv.config()
 const PORT = process.env.PORT
 let coffees = require('./models/coffee.js')
-console.log(coffees)
+
 
 //Middleware
 app.use(express.urlencoded({extended: true}))
