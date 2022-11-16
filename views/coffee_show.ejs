@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%=drink.name%></h1>
+    <h3>Try our <%=drink.name%> for only $<%=drink.price%>!</h3>
+    <h4>
+        <% if (drink.hasCream === true){ %>
+            this drink has cream!
+      <%  } else { %>
+        This drink does not have cream!
+   <%   }%> 
+    </h4>
+    <a href="/coffees"><button>Back to Menu!</button></a>
+    
+</body>
+</html>
